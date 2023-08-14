@@ -1,118 +1,52 @@
-/*Existing CSS code goes here...*/
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  .site {
-    margin: 2vh 1vh 2vh 1vh;
-  }
-
-  .site-header {
-    font-size: 16px;
-  }
-
-  #site-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #site-nav p, #site-nav a {
-    padding: 5px 0;
-  }
-
-  #site-url p {
-    position: static;
-    text-align: center;
-  }
-
-  .site-content {
-    margin: 20px 15px;
-  }
-
-  .site-aboutme {
-    max-width: 90vw;
-    min-width: 80vw;
-    float: none;
-    margin: 0 auto;
-  }
-
-  #name {
-    font-size: calc(10px + 2vmin);
-  }
-
-  #site-aboutme-text {
-    font-size: calc(6px + 1vmin);
-  }
-}
-
-/*Background site styles*/
-
+/* Global Styles */
 body {
-  background-color: #0E131F;
+  background-color: #0e131f;
 }
 
 .site {
-  margin: 3vh 2vh 5vh 5vh;
+  margin: 30px 50px;
 }
 
+.site-content {
+  margin: 25px 30px;
+}
 
-/*Styles for my header*/
+/* Header Styles */
 .site-header {
-  /*Creating header font*/
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
   font-size: 20px;
-
-  /*Setting dimensions*/
-  min-height: 2%;
-  max-height: 2%;
-  min-width: 100%;
-
-  /*Colors*/
-  /* background-color: #000000; */
   color: white;
   margin-bottom: 15px;
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 
-
-/*Navbar Styles*/
+/* Navbar Styles */
 #site-nav {
   display: flex;
   flex-flow: row wrap;
 }
 
-
-/*Main links*/
-#site-nav p {
+#site-nav p,
+#site-nav a {
   padding: 0px 5vh;
   margin-bottom: 10px;
 }
 
-#site-nav a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-#site-nav a:hover {
-  text-decoration: underline;
-}
-
-
-/*Site url in Navbar*/
-#site-url p{
-  position: absolute;
-  right: 0px;
-}
-
+#site-nav a,
 #site-url a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
+#site-nav a:hover,
 #site-url a:hover {
   text-decoration: underline;
-  color: #FFFFFF;
-  
+}
+
+#site-url p {
+  position: absolute;
+  right: 20px;
 }
 
 #logo-img {
@@ -124,56 +58,86 @@ body {
   height: 35px;
 }
 
-.site-content {
-  margin: 25px 30px;
-}
-
-/*About me*/
+/* Content Styles */
 .site-aboutme {
-  background-color: #1B1C1D ;
-  
+  background-color: #1b1c1d;
   padding: 5px 4vh;
-
   display: block;
   float: right;
-
   max-width: 30vw;
   min-width: 10vw;
-
   border-radius: 8px;
 }
 
 #name {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: calc(15px + 2vmin);
-  
-  margin: 30px 10px;
-  color: #FFFFFF;
-  
-  margin-top:10px;
+  margin: 20px 10px;
+  color: #ffffff;
   text-align: right;
-
-  border-bottom: 3px solid #FFFFFF;
 }
 
 #site-aboutme-text {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
   font-size: calc(8px + 1vmin);
-
-  color: #FFFFFF;
-
+  color: #ffffff;
   text-align: justify;
   margin: 5px 10px;
 }
 
-#shs-name {  
+#shs-name,
+#bcca-name {
   text-decoration: none;
-  color: #FFC72A;
+}
+
+#shs-name {
+  color: #ffc72a;
 }
 
 #bcca-name {
-  text-decoration: none;
-  color: #A0C4E2;
+  color: #a0c4e2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 700px) {
+  .site {
+    margin: 30px 50px;
+  }
+
+  .site-header {
+    font-size: 16px;
+  }
+
+  #site-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #site-nav p,
+  #site-nav a {
+    padding: 5px 0;
+  }
+
+  #site-url {
+    display: none;
+  }
+
+  .site-content {
+    margin: 20px 15px;
+  }
+
+  .site-aboutme {
+    min-width: 90%;
+    align-content: center;
+  }
+
+  #name {
+    font-size: calc(12px + 2vmin);
+  }
+
+  #site-aboutme-text {
+    font-size: calc(8px + 1vmin);
+  }
 }

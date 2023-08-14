@@ -1,4 +1,4 @@
-import './dark-theme.css';
+import './stylesheet.css';
 
 
 function App() {
@@ -14,8 +14,6 @@ function App() {
           <p><a href='/'>home</a></p>
           <p><a href='/resume.pdf'>resume</a></p>
 
-          {/* <button onClick={toggleTheme}>🌓</button> */}
-
           <div id='site-url'>
             <p><a href='/'>jobyfoster.dev</a></p>
           </div>
@@ -24,7 +22,7 @@ function App() {
         </nav>
       </header>
       <div className='site-content'>
-        <aside className='site-aboutme'>
+        <div className='site-aboutme'>
           <p id='name'>JOBY FOSTER</p>
 
           <div id='site-aboutme-text'>
@@ -34,7 +32,7 @@ function App() {
               Aiming to apply my passion for coding to solve real-world problems and promote innovation.
             </p>
           </div>
-        </aside>
+        </div>
       </div>
       
     </div>
