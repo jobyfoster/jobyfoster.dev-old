@@ -1,0 +1,15 @@
+{
+  "short_name": "joby foster",
+  "name": "jobyfoster.dev",
+  "icons": [
+    {
+      "src": "jf-logo dark.ico",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
