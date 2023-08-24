@@ -4,21 +4,17 @@ body {
 }
 
 .site {
-  margin: 30px 50px;
-}
-
-.site-content {
-  margin: 25px 30px;
+  padding: 1.3vh 2.5vh;
 }
 
 /* Header Styles */
 .site-header {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 2vh;
   color: white;
-  margin-bottom: 15px;
-  border-bottom: 3px solid #ffffff;
+  margin-bottom: 1.5vh;
+  border-bottom: 0.3vh solid #ffffff;
 }
 
 /* Navbar Styles */
@@ -30,7 +26,7 @@ body {
 #site-nav p,
 #site-nav a {
   padding: 0px 5vh;
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 #site-nav a,
@@ -46,7 +42,7 @@ body {
 
 #site-url p {
   position: absolute;
-  right: 20px;
+  right: 2vh;
 }
 
 #logo-img {
@@ -54,37 +50,12 @@ body {
 }
 
 #logo-img img {
-  width: 35px;
-  height: 35px;
+  width: 3.5vh;
+  height: 3.5vh;
 }
 
-/* Content Styles */
-.site-aboutme {
-  background-color: #1b1c1d;
-  padding: 5px 4vh;
-  display: block;
-  float: right;
-  max-width: 30vw;
-  min-width: 10vw;
-  border-radius: 8px;
-}
-
-#name {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  font-size: calc(15px + 2vmin);
-  margin: 20px 10px;
-  color: #ffffff;
-  text-align: right;
-}
-
-#site-aboutme-text {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 300;
-  font-size: calc(8px + 1vmin);
-  color: #ffffff;
-  text-align: justify;
-  margin: 5px 10px;
+.site-content {
+  margin: 2.5vh 3vh;
 }
 
 #shs-name,
@@ -100,14 +71,39 @@ body {
   color: #a0c4e2;
 }
 
+/* Content Styles */
+.site-aboutme {
+  background-color: #1b1c1d;
+  padding: 0.5vh 4vh;
+  display: block;
+  float: right;
+  max-width: 30vw;
+  min-width: 10vw;
+  border-radius: 0.8vh;
+}
+
+#name {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: calc(1.5vh + 2vmin);
+  margin: 2vh 1vh;
+  color: #ffffff;
+  text-align: right;
+}
+
+#site-aboutme-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: calc(0.8vh + 1vmin);
+  color: #ffffff;
+  text-align: justify;
+  margin: 0.5vh 1vh;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 700px) {
-  .site {
-    margin: 30px 50px;
-  }
-
-  .site-header {
-    font-size: 16px;
+  #site-url {
+    display: none;
   }
 
   #site-nav {
@@ -115,29 +111,22 @@ body {
     align-items: center;
   }
 
-  #site-nav p,
-  #site-nav a {
-    padding: 5px 0;
-  }
-
-  #site-url {
-    display: none;
-  }
-
   .site-content {
-    margin: 20px 15px;
+    margin: 2.5vh 1vh;
   }
 
   .site-aboutme {
-    min-width: 90%;
-    align-content: center;
+    float: none;
+    min-width: fit-content;
+
+    padding: 0.3vh 2vh;
   }
 
   #name {
-    font-size: calc(12px + 2vmin);
+    font-size: calc(1.4vh + 2vmin);
   }
 
   #site-aboutme-text {
-    font-size: calc(8px + 1vmin);
+    font-size: calc(1vh + 1vmin);
   }
 }
